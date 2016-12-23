@@ -1,3 +1,15 @@
+# Install
+
+- Clone it
+- composer install
+- copy .env.example .env
+- create database
+CREATE DATABASE IF NOT EXISTS homestead DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+CREATE USER 'homestead'@'localhost' IDENTIFIED BY 'secret';
+GRANT ALL ON homestead.* TO 'homestead'@'localhost';
+
+- php artisan migrate
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
