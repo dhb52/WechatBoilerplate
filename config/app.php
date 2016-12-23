@@ -181,6 +181,8 @@ return [
         /* laravel-admin */
         Encore\Admin\Providers\AdminServiceProvider::class,
 
+        /* laravel-wechat */
+        Overtrue\LaravelWechat\ServiceProvider::class,
     ],
 
     /*
@@ -228,6 +230,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        /* User added */
+        'Wechat' => Overtrue\LaravelWechat\Facade::class,
 
     ],
 
