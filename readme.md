@@ -15,9 +15,9 @@ CREATE DATABASE IF NOT EXISTS homestead DEFAULT CHARSET utf8 COLLATE utf8_genera
 CREATE USER 'homestead'@'localhost' IDENTIFIED BY 'secret';
 GRANT ALL ON homestead.* TO 'homestead'@'localhost';
 ```
-- Create database tables and seeding the admin data
+- Installing laravel-admin: migration and seeding
 ```
-php artisan migrate
+php artisan admin:install
 ```
 # Laravel PHP Framework
 
